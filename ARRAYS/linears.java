@@ -15,6 +15,7 @@ public class linears {
         System.out.println("Enter Number that you want to search : ");
         int key=sc.nextInt();
         int index = linearSearch(arr, key);
+        //complexity of the linear search = O(n);
         if(index==-1){
             System.out.println("Number not found");
         }else{

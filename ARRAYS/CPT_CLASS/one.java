@@ -97,7 +97,7 @@ public class one {
         // rotateRight1(arr);
         // rotateLeftByK(arr, k);
         // rotateRightByK(arr, k);
-        rotatebyKleftNEW(arr, k);
+        // rotatebyKleftNEW(arr, k);
         
     }
     
