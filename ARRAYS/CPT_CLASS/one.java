@@ -4,6 +4,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class one {
+    public static int searchInsert(int[] nums, int target) {
+        int index=-1;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==target){
+                index=i;
+            }else if(nums[i]<target && nums[i+1]>target){
+                index=i;
+            }
+        }return index;
+    }
     //left rotation by k element (tc-O(n))
     public static void rotatebyKleftNEW(int arr[],int k) {
         if (k<=arr.length) {
@@ -91,13 +101,15 @@ public class one {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int k=sc.nextInt();
-        int arr[]={1,2,3,4,5};
+        // int k=sc.nextInt();
+        int k=2;
+        int arr[]={1,3,4,5,6};
         // rotateleft1(arr);
         // rotateRight1(arr);
         // rotateLeftByK(arr, k);
         // rotateRightByK(arr, k);
         // rotatebyKleftNEW(arr, k);
+       System.out.println(searchInsert(arr, k)); 
         
     }
     
