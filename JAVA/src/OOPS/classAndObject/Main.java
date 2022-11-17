@@ -7,9 +7,9 @@ public class Main {
         Circle circle=new Circle();
 //        System.out.println(circle.area(9));
         Rectangle rectangle = new Rectangle();
-//        rectangle.setLength(7);
-//        rectangle.setBreadth(99);
-//        System.out.println(rectangle.area());
+        rectangle.setLength(7);
+        rectangle.setBreadth(99);
+        System.out.println(rectangle.area());
 
         //Student class
         Student student = new Student();
